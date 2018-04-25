@@ -109,9 +109,10 @@ ical.fromURL(url, {}, (err, data) => {
   output += "disable_comments: true\n";
   output += "menu:\n";
   output += "  main:\n";
-  output += "    weight: 5\n";
+  output += "    weight: 6\n";
   output += "---\n\n";
   output += "Zie ook onze [wiki](https://tkkrlab.nl/wiki/TkkrLab:Current_events) voor meer informatie.\n";
+  output += '<hr />\n\n';
   for (var k in events) {
     var ev = events[k];
     //console.log(ev);
